@@ -2,7 +2,7 @@ import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm, UseFormReturn } from 'react-hook-form';
 import { api } from '@/lib/api';
-console.log("teste")
+console.log("test")
 // Definição do esquema usando zod
 const schema = z.object({
     email: z.string().email("Digite um email para localizar").min(1, "O campo email é obrigatório")
