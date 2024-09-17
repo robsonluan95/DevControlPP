@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import { AuthProvider } from "@/providers/auth";
 import { ModalProvider } from "@/providers/modal";
+import { CustomerProvider } from "@/providers/customerContext";// observer
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,12 +20,15 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={inter.className}>
+        <CustomerProvider>
         <AuthProvider>
           <ModalProvider>
             <Header/>
             {children}
           </ModalProvider>
         </AuthProvider>
+        </CustomerProvider>
+        
         </body>
       
     </html>

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { formFacade, CustomerDataInfo, FormData } from './FormFacade'; // Certifique-se de que o caminho está correto
+import { formFacade, CustomerDataInfo, FormData } from './FormFacade'; // Facade
 import Input from '@/components/input';
 import React from 'react';
 import { FiSearch, FiX } from 'react-icons/fi';
