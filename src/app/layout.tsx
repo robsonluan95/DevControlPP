@@ -7,7 +7,7 @@ import { ModalProvider } from "@/providers/modal";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Dev Controle - seu sistema de gerenciamento.",
+  title: "Dev Controle - seu sistema de gerenciamento!",
   description: "Gerencie seus  projetos com a Dev Controle!",
 };
 
